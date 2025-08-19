@@ -89,5 +89,3 @@ make
 ```
 
 ---
-If you like, I can now **prepare HelloCPP in the same fully detailed, consolidated style** next. Do you want me to do that?
-
