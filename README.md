@@ -54,6 +54,12 @@ HelloGolang/
 │   ├── 08_mathematical_algorithms.go
 │   ├── 09_backtracking_algorithms.go
 │   └── README.md
+├── Projects/              # Real-world project implementations
+│   ├── Binutils/          # Complete GNU Binutils implementation
+│   │   ├── elf/           # Shared ELF parsing library
+│   │   ├── 01_elf_parser.go through 22_dllwrap.go
+│   │   └── README.md
+│   └── README.md
 ├── CONTRIBUTING.md        # Contribution guidelines
 ├── CONTRIBUTING_EXAMPLES.md  # Go-specific examples
 ├── LICENSE                # License file
@@ -83,6 +89,7 @@ HelloGolang/
 - **Fundamentals**: 16 files covering all Go language basics
 - **Advanced**: 12 files covering advanced patterns and techniques
 - **Algorithms**: 9 files with 60+ algorithm implementations
+- **Projects**: Complete GNU Binutils implementation (22 tools)
 
 ---
 
@@ -123,6 +130,11 @@ go run 01_advanced_concurrency.go
 # Algorithms
 cd Algorithms
 go run 01_sorting_algorithms.go
+
+# Projects - Binutils
+cd Projects/Binutils
+go build 02_objdump.go
+./02_objdump <object-file>
 ```
 
 ---

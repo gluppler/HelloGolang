@@ -171,3 +171,38 @@ func testingSummary() {
 	fmt.Println("  - Run benchmarks: go test -bench=.")
 	fmt.Println("  - Run specific test: go test -run TestName")
 }
+
+func main() {
+	// This file demonstrates Go testing concepts
+	// To run actual tests, use: go test
+	// This main function is for demonstration purposes only
+	
+	fmt.Println("Go Testing Framework Demonstration")
+	fmt.Println("===================================")
+	fmt.Println()
+	fmt.Println("This file demonstrates:")
+	fmt.Println("  - Test functions (TestXxx)")
+	fmt.Println("  - Table-driven tests")
+	fmt.Println("  - Error testing")
+	fmt.Println("  - Benchmarking")
+	fmt.Println("  - Example tests")
+	fmt.Println("  - Test setup/teardown")
+	fmt.Println("  - Parallel testing")
+	fmt.Println()
+	fmt.Println("To run tests, use: go test")
+	fmt.Println()
+	
+	// Demonstrate functions
+	fmt.Println("Function demonstrations:")
+	fmt.Printf("  add(2, 3) = %d\n", add(2, 3))
+	fmt.Printf("  subtract(5, 3) = %d\n", subtract(5, 3))
+	
+	result, err := divide(10, 2)
+	if err != nil {
+		fmt.Printf("  divide(10, 2) error: %v\n", err)
+	} else {
+		fmt.Printf("  divide(10, 2) = %.1f\n", result)
+	}
+	
+	testingSummary()
+}
